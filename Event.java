@@ -18,6 +18,11 @@ abstract class Event{
       this.name=NAME;
       this.event_time=time;
    }
+
+   public void set_time(String value){
+      event_time=value;
+
+   }
    public int get_date(){
       return this.event_date;
    }
@@ -29,6 +34,7 @@ abstract class Event{
    public String get_time(){
       return this.event_time;
    }
+
    abstract void display();
 
 
